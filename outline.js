@@ -14,7 +14,7 @@
 // - Create a model
 // - Create a schema
 // - Create a controller
-// what is a conroller?
+// what is a controller?
 // - A controller is a function that handles a request and returns a response.
 
 // - Create a route
