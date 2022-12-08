@@ -22,3 +22,6 @@
 
 // ...
 
+// - What is Postman?
+// - Postman is a collaboration platform for API development.
+// - Postman is a tool that helps you to test your API.
