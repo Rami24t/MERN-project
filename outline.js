@@ -25,3 +25,12 @@
 // - What is Postman?
 // - Postman is a collaboration platform for API development.
 // - Postman is a tool that helps you to test your API.
+
+// What is JWT?
+// - JWT stands for JSON Web Token.
+// - JWT is an open standard (RFC 7519) that defines a compact and 
+// self-contained way for securely
+// transmitting information between parties as a JSON object.
+// - JWT is a compact URL-safe means of representing
+//  claims to be transferred between two parties.
+// - JWT is a JSON object that contains a header, a payload, and a signature.
