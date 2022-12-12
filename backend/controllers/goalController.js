@@ -12,7 +12,7 @@ const getGoals = asyncHandler(async (req, res) => {
 
     res.status(200).json({ message: 'Getting goals', goals }); 
 })   
-//@desc Set a goal
+//@desc Add a goal
 //@route POST /api/goals
 //@access Private
 const addGoal = asyncHandler(async (req, res) => {
@@ -23,7 +23,7 @@ const addGoal = asyncHandler(async (req, res) => {
     const goal = await Goal.create({
         text: req.body.text
     })
-    console.log(req.body);
+    // console.log(req.body);
     res.status(200).json({ message: 'Goal added successfully!', goal });
 })
 
