@@ -92,15 +92,13 @@ const getUsers = asyncHandler(async (req, res) => {
 //@route POST /api/users/myprofile
 //@access Private
 const getMyProfile = asyncHandler(async (req, res) => {
-    if(!req.body.text) {
+    if(!req.user) {
         res.status(400)
-        throw new Error('No user text');
+        throw new Error('No user!');
     }
-    const user = await User.create({
-        text: req.body.text
-    })
-    console.log(req.body);
-    res.status(200).json({ message: 'User added successfully!', user });
+//    console.log(req.body);
+const {_id, name, email} = req.user;
+    res.status(200).json({ success: true, user: {_id, name, email} });
 })
 
 
