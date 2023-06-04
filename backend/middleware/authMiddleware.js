@@ -11,7 +11,7 @@ const authorizeUser = asyncHandler(async (req, res, next) => {
         const token = req.headers.authorization.split(' ')[1];
         const decoded = jwt.verify(token, process.env.JWT_SECRET);
         req.user = await User.findById(decoded.id).select('-password');
-        next();
+        next(); // to pass control to the next middleware
         }
         catch(err){
             console.log(err.message);
