@@ -80,7 +80,6 @@ const logInUser = asyncHandler(async (req, res) => {
 
 //@desc Get the users
 //@route GET /api/users
-//@access Private
 const getUsers = asyncHandler(async (req, res) => {
     const users = await User.find({});
     res.status(200).json({ message: 'Getting users', users });
